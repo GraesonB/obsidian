@@ -1,0 +1,15 @@
+[package]
+name = "obsidian"
+version = "0.1.0"
+edition = "2021"
+
+
+[workspace]
+members = [
+    "crates/*",
+    "viewer"
+]
+default-members = ["viewer"]
+
+[dependencies]
+obsidian_app = { path = "crates/obsidian_app" }
