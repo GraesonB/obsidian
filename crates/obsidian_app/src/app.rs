@@ -7,6 +7,8 @@ use winit::{
     window::{Window, WindowBuilder},
 };
 
+use crate::logger::create_logger;
+
 pub struct AppConfig {
     pub width: u32,
     pub height: u32,
@@ -53,6 +55,7 @@ pub trait Run {
 // runner. Also only takes runners that have 'static lifetime, which is data that lives as long as the
 // application is running
 pub fn run_application(mut runner: impl Run + 'static, configuration: AppConfig) -> Result<()> {
+    create_logger(&configuration.logfile_name);
     let (event_loop, _window) = create_window(&configuration)?;
 
     let mut application = Application {};

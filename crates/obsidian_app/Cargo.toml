@@ -9,3 +9,4 @@ edition = "2021"
 anyhow = "1.0.34"
 log = "0.4.11"
 winit = "0.24.0"
+simplelog = { version = "0.9.0", features = ["termcolor"] } # termcolor allows for coloured terminal output
