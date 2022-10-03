@@ -7,3 +7,5 @@ edition = "2021"
 
 [dependencies]
 obsidian = { path = ".." }
+anyhow = "1.0.34"
+log = "0.4.11"
