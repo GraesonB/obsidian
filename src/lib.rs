@@ -6,3 +6,7 @@
 pub mod app {
     pub use obsidian_app::*; // This is allowed through our workspace dependencies.
 }
+
+pub mod render {
+    pub use obsidian_render::*;
+}

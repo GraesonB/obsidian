@@ -7,7 +7,7 @@ use winit::{
     window::{Window, WindowBuilder},
 };
 
-use crate::logger::create_logger;
+use crate::logger::create_logger; // create here
 
 pub struct AppConfig {
     pub width: u32,

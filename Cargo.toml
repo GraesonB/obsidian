@@ -13,3 +13,4 @@ default-members = ["viewer"]
 
 [dependencies]
 obsidian_app = { path = "crates/obsidian_app" }
+obsidian_render = { path = "crates/obsidian_render" }
